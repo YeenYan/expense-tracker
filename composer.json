@@ -1,0 +1,27 @@
+{
+  "name": "mark_ian_reyes/expense-tracker",
+  "description": "A refresher for learning PHP",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Mark Ian",
+      "email": "markiantalan@gmail.com"
+    }
+  ],
+  "require": {
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Framework\\": "src/Framework",
+      "App\\": "src/App"
+    },
+    "files": [
+      "src/App/Config/Routes.php",
+      "src/App/Config/Middleware.php"
+    ]
+  },
+  "scripts": {
+    "expense": "php cli.php"
+  }
+}
